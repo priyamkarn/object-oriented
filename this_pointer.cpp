@@ -1,6 +1,12 @@
 //this pointer ?
 //It specifies every object by its own address
-
+/*box(box& sample)
+    {
+        length = sample.length;
+        breadth = new int;
+        *breadth = *(sample.breadth);
+        height = sample.height;
+    }*/
 //What is the type of "this" pointer ?
 //Ans : For a class X, the type of this pointer is ‘X* ‘.
 //      Also, if a member function of X is declared as const, then the type of this pointer is ‘const X *’
