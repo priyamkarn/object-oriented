@@ -13,6 +13,14 @@
     - NOTE: If you are declaring an array of objects (Complex c[3]; then you must have a default constructor because if we don't have default constructor, then
       it will require the parameters to be passed and with statement Complex c[3], you can't do that)
 */
+/*Free Copy Constructor and Shallow Copy (Bit Copy):
+    - If user doesn't provide a copy constructor, compiler provides one and does a bit copy
+    Sometimes bit copy will be fine. But sometimes it will lead to unexpected results.
+    See the example below
+    What is Shallow Copy or Bit Copy ?
+    Ans : With bit-copy, only the pointer is copied - not the pointed object. This may be risky.
+    ALERT :  So, Bit-copy(Shallow Copy) is not same as Object Copy(Deep Copy)  !!!*/
+
 
 #include <iostream>
 using namespace std;
