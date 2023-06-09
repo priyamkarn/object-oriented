@@ -1,3 +1,4 @@
+//no need to create object
 //we need a static member function which can change those static private data members for me.
 //Because non-static member function will have this pointer and static data members do not belong to any object
 #include <iostream> 
