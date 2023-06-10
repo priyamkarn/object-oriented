@@ -1,0 +1,18 @@
+class Shape {
+public:
+  virtual double area() const = 0;  // Pure virtual function
+};
+
+class Rectangle : public Shape {
+public:
+  double area() const override {
+    // Implementation of area() for Rectangle
+  }
+};
+
+class Circle : public Shape {
+public:
+  double area() const override {
+    // Implementation of area() for Circle
+  }
+};
