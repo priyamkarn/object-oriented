@@ -1,0 +1,27 @@
+#include <iostream>
+
+// Abstract base class
+class Base {
+public:
+    // Pure virtual function
+    virtual void foo() = 0;
+};
+
+// Derived class implementing the pure virtual function
+class Derived : public Base {
+public:
+    void foo() override {
+        std::cout << "Derived class implementation of foo()" << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of the derived class
+    Derived derivedObj;
+    
+    // Calling the pure virtual function through the base class pointer
+    Base* basePtr = &derivedObj;
+    basePtr->foo(); // Outputs: "Derived class implementation of foo()"
+    
+    return 0;
+}
